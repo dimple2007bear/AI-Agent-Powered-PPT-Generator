@@ -24,7 +24,7 @@ elif:
   st.sidebar.info("Must Pass all API keys")
 else:
   st.sidebar.success("API keys loades successfully")
-  # Step1:model call
+# Step1:model call
   model=ChatGoogleGenerativeAI(
     model="gemini-3.5-flash-lite",
     google_api_key=GOOGLE_API_KEY
