@@ -105,8 +105,8 @@ if all(ALL_API) and user_query:
         output in proper HTML news templates"""+user_query
         response = agent.invoke({'messages':[{'role':"user",
                                  'content':"final_prompt"}]})
-  code = response['message'][-1].content[-1]['text']
-  st.html(code,width="stretch",unsafe_allow_javascript=True)
+        code = response['message'][-1].content[-1]['text']
+        st.html(code,width="stretch",unsafe_allow_javascript=True)
 
   with tab3:
     st.header("Create PPT")
