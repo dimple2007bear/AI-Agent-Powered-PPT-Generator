@@ -20,15 +20,15 @@ os.environ["TAVILY_API_KEY"]=TAVILY_API_KEY
 
 ALL_API=[GOOGLE_KEY,GROQ_KEY,TAVILY_API_KEY]
 if not all(ALL_API):
-  st.sidebar.info("Pass API keys")
+  st.sidebar.error("Pass AP-keys")
 elif all(ALL_API):
   # Step1:model call
   model=ChatGoogleGenerativeAI(
     model="gemini-3.5-flash-lite",
     google_api_key=GOOGLE_API_KEY
-  )
+    )
   st.sidebar.success("API keys loades successfully")
-elif:
+elif any(ALL_API):
   st.sidebar.info("Must Pass all API keys")
 else:
   st.info("LOADED")
