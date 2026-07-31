@@ -104,7 +104,7 @@ if all(ALL_API) and user_query:
         prompt =""" Give latest news India or world news related to tech,business,jobs, or user request
         output in proper HTML news templates"""+user_query
         response = agent.invoke({'messages':[{'role':"user",
-                                 "content":final_prompt}]})
+                                 content:final_prompt}]})
   code = response['message'][-1].content[-1]['text']
   st.html(code,width="stretch",unsafe_allow_javascript=True)
 
