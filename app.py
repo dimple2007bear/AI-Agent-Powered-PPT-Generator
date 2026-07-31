@@ -86,7 +86,7 @@ if all(ALL_API) and user_query:
   )  
 
 #=================Display Agent==============
-  st.sidebar.image(agent)
+  # st.sidebar.image(agent)
 
 #============With Tabs===============
   with tab1:
