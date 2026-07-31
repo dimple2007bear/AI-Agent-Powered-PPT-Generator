@@ -55,7 +55,7 @@ def generate_image(img_prompt):
   with open(f"Image.jpeg",'wb') as f:
     f.write(content)
   from PIL import Image
-  return Image.open("Image.jpeg")
+  return url
   
 # with tabs
 tab1,tab2,tab3,=st.tabs(["Generate Image",
