@@ -91,7 +91,7 @@ if all(ALL_API) and user_query:
 #============With Tabs===============
   with tab1:
     st.header("Generate Image give prompt")
-    if st.button("Click to generate:",key="generate_img_button):
+    if st.button("Click to generate:",key="generate_img_button"):
       with st.spinner("Running Agent.."):
         data=f"https://image.pollinations.ai/{user_query}"
         time.sleep(3)
